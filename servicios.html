@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios - Geosierra</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <style>
+        /* Encabezado */
+        header {
+            background-color: #3bb50e;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        header .logo-container {
+            display: flex;
+            align-items: center;
+        }
+        header img {
+            width: 50px;
+            height: 50px;
+            margin-right: 15px;
+            border-radius: 50%;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 1.8rem;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #ffa500;
+        }
+
+        /* Sección de "Sobre Nosotros" */
+        section {
+            padding: 50px 20px;
+        }
+        section h2 {
+            color: #e94e1b;
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+        section p {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+            color: #333;
+        }
+
+        /* Estilo intercalado Imagen - Texto */
+        .servicio {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+        .servicio img {
+            width: 100%;
+            max-width: 450px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+            margin-right: 20px;
+        }
+        .servicio img:hover {
+            transform: scale(1.05);
+        }
+        .servicio h3 {
+            font-size: 1.6rem;
+            color: #333;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+        .servicio p {
+            font-size: 1.1rem;
+            color: #555;
+            margin-top: 10px;
+        }
+
+        /* Para alternar imagen-texto y texto-imagen */
+        .servicio.reverse {
+            flex-direction: row-reverse;
+            margin-left: 20px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #3bb50e;
+            color: white;
+            text-align: center;
+            padding: 15px 10px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="D:\web_page_geosierra\logo.svg" alt="Logo Geosierra">
+            <h1>Geosierra - Topografía y Geodesia</h1>
+        </div>
+        <nav>
+            <a href="principal.html">Inicio</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="nosotros.html">Sobre Nosotros</a>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Nuestros Servicios</h2>
+
+        <!-- Imagen - Texto -->
+        <div class="servicio">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSr2_DbmjSNaHuS4UOi49ax00rVJ4rxeMMZAQ&s" alt="Topografía Georeferenciada">
+            <div>
+                <h3>Curvas de nivel</h3>
+                <p>Obtención de planimetría, altimetría por medio de vuelo fotogramétrico. Productos como nube densa de puntos, ortofotos, modelo digital de elevaciones, curvas de nivel, y triangulación de terreno (TIN).</p>
+            </div>
+        </div>
+
+        <!-- Texto - Imagen -->
+        <div class="servicio reverse">
+            <div>
+                <h3>Topografía planimétrica</h3>
+                <p>Deslinde de predios, apeo, demarcación, rectificación de medidas, análisis topográfico (agrimensura).</p>
+            </div>
+            <img src="https://wyvern.com.mx/wp-content/uploads/2019/07/Deslindes.jpg" alt="Deslindes">
+        </div>
+
+        <!-- Imagen - Texto -->
+        <div class="servicio">
+            <img src="https://www.levantamientostopograficos.com.mx/servicios_de_topografia_en_toluca/levantamientos_topograficos_en_toluca.jpg" alt="Apeos">
+            <div>
+                <h3>Apeos</h3>
+                <p>Mediciones detalladas y precisas para proyectos de construcción.</p>
+            </div>
+        </div>
+
+        <!-- Texto - Imagen -->
+        <div class="servicio reverse">
+            <div>
+                <h3>Rectificación de Medidas</h3>
+                <p>Ajustes de mediciones existentes para garantizar la exactitud en proyectos.</p>
+            </div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTY4r9z9OUA9UI4bIYUOwv0fM8-pgJixn8Wvg&s" alt="Rectificación de Medidas">
+        </div>
+
+        <!-- Imagen - Texto -->
+        <div class="servicio">
+            <img src="https://blog.konstruedu.com/wp-content/uploads/2022/02/image-17.png" alt="Vuelos Fotogramétricos">
+            <div>
+                <h3>Vuelos Fotogramétricos</h3>
+                <p>Captura de imágenes aéreas para modelado 3D y análisis topográfico.</p>
+            </div>
+        </div>
+
+        <!-- Texto - Imagen -->
+        <div class="servicio reverse">
+            <div>
+                <h3>Servicios de ingeniería</h3>
+                <p>Estudios hidrológicos e hidráulicos, análisis de riesgo de inundación, delimitación de zonas federales (ríos y arroyos).</p>
+            </div>
+            <img src="https://pcti.mx/wp-content/uploads/2020/12/127Figura1-791x1024.jpg" alt="Servicios de ingeniería">
+        </div>
+    </section>
+
+    <footer>
+        <p>Contacto: info@geosierra.com | Tel: +52 123 456 7890</p>
+        <p>&copy; 2024 Geosierra. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
